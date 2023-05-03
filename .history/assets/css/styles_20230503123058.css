@@ -57,7 +57,6 @@ a {
     position: relative;
     background: #e6f0ff;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     height: calc(100vh - 90px);
 }
@@ -121,11 +120,11 @@ a {
     text-transform: capitalize;
     color: #5a6473;
 }
-.hero-cta {
+.hero-wrap-cta {
     min-width: 170px;
     margin-top: 40px;
 }
-.hero-img {
+.hero-wrap-img {
     position: absolute;
     right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;

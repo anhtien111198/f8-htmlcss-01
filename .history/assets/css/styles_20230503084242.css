@@ -4,10 +4,6 @@
 :root {
     --primary-color: #0f1b4c;
 }
-html,
-body {
-    scroll-behavior: smooth;
-}
 html {
     font-size: 62.5%;
 }
@@ -47,19 +43,15 @@ a {
 }
 /* =============heder============== */
 .fixed-header {
+    z-index: 1;
     background: #e6f0ff;
     padding-top: 26px;
     position: sticky;
-    top: -26px;
-    z-index: 1;
 }
-.hero-wrap {
+.header {
     position: relative;
     background: #e6f0ff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: calc(100vh - 90px);
+    height: 100vh;
 }
 .navbar {
     display: flex;
@@ -96,24 +88,27 @@ a {
     margin-left: 18px;
     border-radius: 8px;
 }
-.hero-wrap .info {
+.hero {
+    margin-top: 130px;
+}
+.hero .info {
     width: 51%;
 }
-.hero-wrap .sub-title {
+.hero .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
     letter-spacing: 0.01em;
     color: #687690;
 }
-.hero-wrap .title {
+.hero .title {
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
     color: #000336;
 }
-.hero-wrap .desc {
+.hero .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
